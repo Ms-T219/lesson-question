@@ -1,0 +1,82 @@
+html{
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Noto Sans Japanese", sans-serif;
+}
+
+/* リンクのアンダーバー消えない */
+nav{
+  font-size: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  font-weight: bold;
+  margin: 20px auto 20px auto;
+  text-decoration: none;
+}
+body{
+  padding: 0%;
+  margin: 0%;
+}
+#MyProfile{
+  border: solid;
+  padding: auto; 
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mainpic{
+  width: 100%;
+}
+
+h1{
+  font-size: 34px;
+  text-align: center;
+}
+
+/* About */
+.name{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*正円作る方法 ”border-radius: 50%;” >四隅に50％の角丸を指定*/
+.aboutpic{
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+}
+
+/* 箇条書きの・が左端のまま */
+.About{
+ /* margin: 20px; */
+ flex-wrap: wrap;
+ justify-content: row;
+ align-items: center;
+ text-align: center;
+}
+
+.Works{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+/* .moutain{
+  align-items: center;
+} */
+
+footer{
+  margin-top: 30px;
+}
+
+@media screen and(max-width:767px) {
+ .Works{
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+    }
+  }  
+ 
