@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>MyProfile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <header>
+    <nav>
+      <div id="MyProfile">
+        <a href="index.html">MyProfile</a>
+      </div>
+     <div id="aw">
+      <a href="index.html">About</a>
+      <a href="index.html">Works</a>
+     </div>
+
+    </nav>
+  </header>
+
+<main>
+  <article>
+    <img src="img/main.png" class="mainpic" alt="CanonのCamera" >
+    <section class="About">
+     
+
+      <!-- 画像と文字で左右に分ける　div , display:flex-->
+      <div class="left-img">
+      <img src="img/about.png" class="aboutpic" alt="Kazuki Asahina">
+      </div>
+
+      <div class="right-p">
+       <h1>About</h1>
+       <p class="name">Kazuki Asahina</p>
+       <ul>
+        <li>25歳 長崎県佐久市出身</li>
+        <li>ソフトウェア業界でマーケティングに従事</li>
+        <li>趣味はカメラ、愛機はCanon</li>
+        <li>自然を撮影することが好きで、海や山によく行く</li>
+       </ul>
+      </div>
+
+    </section>
+   
+    <!-- htmlで複数のclassできる　半角スペース  -->
+    <h1>Works</h1>
+    <section class="Works">
+      <div class="sea work-item">
+        <img src="img/works1.png" alt="日本海">
+        <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
+      </div>
+        
+      <div class="mountain work-item">
+        <img src="img/works2.png" alt="冠雪した御獄山">
+        <p>地元長野の木曽町から撮影した、冠雪した御獄山</p>
+      </div>
+      <div class="town work-item">
+        <img src="img/works3.png" alt="京都の街並み">
+        <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+      </div>
+       
+    </section>
+   
+  </article>
+
+</main>
+
+<footer>
+ <p>&copy;MyProfile.All rights reserved.</p>
+</footer>
+
+
+</body>
+
+  
+</html>
