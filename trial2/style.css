@@ -57,17 +57,40 @@ li{
   width: 800px;
   margin-left: 240px;
   margin-top: 50px;
-  display: inline-block;
+  
+}
+.photos-works{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-  .photos-works img{
-  
-    width: 392px;
-    height: 261px;
-    margin-left: 16px;
-  }
+.green-photo{
+  max-width: 47.8%;
+  height: auto; 
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
 
+.blue-photo{
+  max-width: 47.8%;
+  height: auto; 
+  margin-bottom: 15px;
 
+}
+
+.red-photo{
+  max-width: 47.8%;
+  height: auto; 
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.white-photo{
+  max-width: 47.8%;
+  height: auto; 
+  margin-bottom: 20px;
+
+}
 
 #detail-section{
   width: 800px;
