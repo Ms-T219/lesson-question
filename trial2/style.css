@@ -1,18 +1,21 @@
 html{
-  width: 1000px;
+  width: 1280px;
   font-family: Meiriyo;
 }
 
 h1{
   font-weight: lighter;
   margin-left: 140px;
+  /* margin-right: 140px; */
   margin-bottom: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 .yellow-photo{
   margin-left: 140px;
-  margin-bottom: 60px;
+  /* margin-right: 140px; */
+  margin-bottom: 50px;
 }
 
 #index{
@@ -26,7 +29,7 @@ h2{
   text-align: center;
   padding-top: 30px;
   padding-bottom: 20px;
-  
+  font-size: 18px;
   }
 
 ol{
@@ -65,31 +68,30 @@ li{
 }
 
 .green-photo{
-  max-width: 47.8%;
+    max-width: 48.9%;
   height: auto; 
   margin-right: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 15px;  
 }
 
 .blue-photo{
-  max-width: 47.8%;
+    max-width: 48.9%;
   height: auto; 
   margin-bottom: 15px;
 
 }
 
 .red-photo{
-  max-width: 47.8%;
+    max-width: 48.9%;
   height: auto; 
   margin-right: 15px;
   margin-bottom: 20px;
 }
 
 .white-photo{
-  max-width: 47.8%;
+   max-width: 48.9%;
   height: auto; 
   margin-bottom: 20px;
-
 }
 
 #detail-section{
@@ -97,4 +99,55 @@ li{
   height: 400px;
   background-color: #F5F5F5;
   margin-left: 240px;
+  font-size: 14px;
+  display: flex;
+}
+
+.detail{
+  margin-left: 60px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.author h4::after{
+  content:""; /* 必須 */
+  display:inline-block;
+  width: 1px;
+  height: 270px;
+  background-color:#333333;
+  
+  position: absolute;
+  left: 200px;
+
+}
+
+.text-rightside{
+  margin-top:60px;
+  margin-left: 80px;
+  margin-right: 60px;
+
+  overflow-wrap:break-word;
+}
+
+.detail-text{
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+footer{
+  margin-top: 70px;
+  margin-left: 540px;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1024px){
+ .photos-works{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+ }
+  
 }
