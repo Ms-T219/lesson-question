@@ -31,7 +31,7 @@ $(window).on('scroll',function(){
   
   const navAbout=$('#nav-about')
    $('#navAbout').on('click',function(){
-    $('#navAbout').css('color','red');
+    $('#navAbout').css('color','#ff178');
    });
 
   // セクションのフェードイン
@@ -50,7 +50,7 @@ $(window).on('scroll',function(){
     $('.photos-works img').click(function(){
       const imgSrc = $(this).attr('src');
       $('.modal-photo').attr('src',imgSrc);
-      $('modal').fadeIn();
+      $('.modal').fadeIn();
       return false
     });
     
