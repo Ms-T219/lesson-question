@@ -1,0 +1,75 @@
+html{
+  font-family: "Helvetica Neue","Arial","Hiragino Sans","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+  font-size: 100%;
+}
+
+#container{
+  position: relative;
+  bottom: 10px;
+}
+
+#container-nav a{
+  text-decoration: none;
+}
+
+nav ul{
+  /* display: flex; */
+  text-align: right;
+  justify-content: flex-end;
+}
+
+li{
+  display: inline-block;
+  position: absolute;
+  list-style-type: none;
+  top: 0;
+  right: 60px;
+  color: #FFFFFF;  
+  font-weight: bold;
+  /* background: transparent;
+  background-image: url(img/mainvisual.jpg);
+  opacity: 1;
+  background-repeat: no-repeat; */
+  /* text-align: right; */
+}
+
+
+#container h1{
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  right: 5rem;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 115px;
+  font-weight: bold;
+}
+
+.coffee-top{
+  max-width: 100%;
+}
+
+#menue{
+  position: relative;
+}
+
+#menue h1{
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+  right: 10rem;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.mag{
+  max-width: 100%;
+}
+
+/* Menue */
+#menu-containts{
+  display: flex;
+  text-align: center;
+}
