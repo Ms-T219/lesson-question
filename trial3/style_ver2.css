@@ -10,6 +10,10 @@ body{
 #container{
   position: relative;
   bottom: 10px;
+  width: 100%;
+  background-image: url(img/mainvisual.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 #container-nav a{
@@ -30,9 +34,21 @@ nav ul{
 li{
   display: inline-block;
   list-style-type: none;
+  
+  /* background: transparent;
+  background-image: url(img/mainvisual.jpg);
+  opacity: 1;
+  background-repeat: no-repeat; */
+  /* text-align: right; */
+
 }
 
+a{
+  color: #FFFFFF;
+  margin: 15%;
+}
 
+/* ヘッダー */
 #container h1{
   position: absolute;
   top: 5rem;
@@ -44,13 +60,7 @@ li{
   font-weight: bold;
 }
 
-a{
-  color: #FFFFFF;
-  margin: 15%;
-}
-
-  
-.coffee-top{
+#container{
   width: 100%;
   background-image: url(img/mainvisual.jpg);
   background-size: cover;
@@ -79,6 +89,12 @@ a{
   background-position: center;
 }
 
+.mag{
+  width: 100%;
+  background-image: url(img/menu.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
 /* Menue 幅調整*/
 #menue-containts{
@@ -86,6 +102,7 @@ a{
   justify-content: center;
   max-width: 1000px;
   margin: auto;
+  padding: auto;
 }
 
 .text-rightside{
@@ -105,23 +122,23 @@ h2{
   font-size: 2.5rem;
 }
 
-#menue-containts dt{
+#menu-containts dt{
   display: flex;
   flex-wrap: wrap;
   text-align: right;
   width: 50%;
   border-bottom: dotted 1px #000;
-  /* padding-left: 15%; */
+  padding-left: 15%;
   
 }
 
-/* #menue-containts dd{
+/* #menu-containts dd{
   width: 20%;
 } */
 
 .about-img{
   width: 100%;
-  background-image: url(img/about.jpg );
+  background-image: url(img/about.jpg);
   background-size: cover;
   background-position: center;
 }
