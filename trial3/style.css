@@ -35,16 +35,22 @@ li{
 
 #container h1{
   position: absolute;
-  top: 5rem;
+  /* top: 5rem;
   left: 5rem;
-  right: 5rem;
+  right: 5rem; */
   text-align: center;
   color: #FFFFFF;
-  font-size: 115px;
+  font-size: 90px;
   font-weight: bold;
+
+  top: 20%;
+  left: 50%;
+  right: auto;
+  /* transform:translateY(-50%) */
+  transform: translateX(-50%);
 }
 
-a{
+#container a{
   color: #FFFFFF;
   margin: 15%;
 }
@@ -52,31 +58,51 @@ a{
   
 .coffee-top{
   width: 100%;
+  height: 600px;
+}
+
+.coffee-img{
   background-image: url(img/mainvisual.jpg);
   background-size: cover;
   background-position: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-repeat: no-repeat;
+  padding: 20px 40px;
 }
 
+/* メニュー */
 #menue{
   position: relative;
 }
 
 #menue h1{
   position: absolute;
-  top: 10rem;
+  /* top: 10rem;
   left: 10rem;
-  right: 10rem;
+  right: 10rem; */
   text-align: center;
+  top: 20%;
+  left: 50%;
+  right: auto;
   color: #FFFFFF;
-  font-size: 72px;
+  font-size: 90px;
   font-weight: bold;
+  margin: 0;
+  /* transform:translateY(-50%) */
+  transform: translateX(-50%);
 }
 
 .menue-img{
-  width: 100%;
   background-image: url(img/menu.jpg);
   background-size: cover;
   background-position: center;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-bottom: 30px;
+  background-attachment: fixed;
 }
 
 
@@ -86,49 +112,233 @@ a{
   justify-content: center;
   max-width: 1000px;
   margin: auto;
-}
-
-.text-rightside{
-  margin: 0;
-  width: 50%;
-  text-align: center;
-  border-right: solid 1px #000;
+  /* padding: 30px,0; */
 }
 
 .text-leftside{
-  margin: 0;
+  width: 50%;
+  text-align: left;
+  border-right: solid 1px #000;
+}
+
+.text-rightside{
   width: 50%;
   text-align: center;
 }
 
+.text-rightside dl{
+  margin-left: 10%;
+  padding: 0%;
+}
+
+
 h2{
   font-size: 2.5rem;
+  /*display:inline-block; で可変  */
+  display:inline-block;  
+  border-bottom:solid 6px #E03131;
+}
+
+#menue-containts dl{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  width: 100%;
 }
 
 #menue-containts dt{
-  display: flex;
-  flex-wrap: wrap;
-  text-align: right;
-  width: 50%;
   border-bottom: dotted 1px #000;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content: space-around; */
+
+  text-align: left;
+  width: 65%; 
   /* padding-left: 15%; */
-  
+  /* margin-bottom: 25px; */
 }
 
-/* #menue-containts dd{
-  width: 20%;
-} */
+#menue-containts dd{
+  /* width: 20%; */
+  text-align: left;
+  padding-top: 8px;
+}
 
 .about-img{
   width: 100%;
+  height: 400px;
   background-image: url(img/about.jpg );
   background-size: cover;
   background-position: center;
+  margin-top: 30px;
+  background-attachment: fixed;
+
+}
+
+#about-container{
+  position: relative;
+}
+
+#about-container h1{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 90px;
+  font-weight: bold;
+  margin: 0;
+  transform:translateY(-50%);
+}
+#about-container{
+  text-align: center;
+
+}
+
+/* 2・2で並べる */
+.about-text-top{
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.about-text-bottom{
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.btn{
+  position: relative;
+  display: inline-block;
+  padding: 18px 45px;
+  color: #000;
+}
+
+.btn a{
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+.btn a::before{
+  border: 2px solid #E03131;
+  position: absolute;
+  content: "";
+  transition: all 0.3s ease-in-out;
+}
+
+.btn a::after{
+  border: 2px solid #E03131;
+  position: absolute;
+  content: "";
+  transition: all 0.3s ease-in-out;
+}
+
+/* 左上かっこ */
+.btn a::before{
+  border-width: 0 2px 2px 0;
+  bottom: 0;
+  right: 0;
+  
+  width: 30px;
+  height: 25px;
+}
+
+/* 右下かっこ */
+.btn a::after{
+  border-width: 2px 0 0 2px;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 25px;
+  /* transition: all 0.3s ease; */
+
+}
+
+/* inlineは、margin設定できない、外側の余白つけたい時は、divで囲む */
+.btn-contain{
+  text-align: center;
+}
+
+.btn a:hover::before{
+  width: 100%;
+  height: 100%;
+}
+
+.btn a:hover::after{
+  width: 100%;
+  height: 100%;
+}
+
+#location{
+  text-align: center;
+  display: block;
 }
 
 .location-img{
   width: 100%;
+  height: 400px;
+  margin-top: 50px;
   background-image: url(img/location.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
+  background-attachment: fixed;
+
+}
+.location-container h1{
+  position: absolute;
+  top: 50%;
+  right: 50%; 
+  left: 30%;
+  color: #FFFFFF;
+  font-size: 90px;
+  font-weight: bold;
+  margin: 0;
+  transform:translateY(-50%)
+}
+.location-container{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+iframe{
+  max-width: 100%;
+}
+
+.location-text{
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1{
+  text-shadow: 1px 2px 2px #FFFFFF;
+}
+
+footer{
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  /* imgの上の文字サイズ調整する */
+  #container h1{
+    font-size: 60px;
+  }
+
+  .location-container h1{
+    font-size: 50px;
+  }
+  #menue h1{
+    left: 50%;
+    top: 30px;
+    /* transform: translateY(-50%); */
+    right:auto;
+    font-size:70px ;
+    
+  }
+  #about-container h1{
+    font-size: 60px;
+  }
 }
